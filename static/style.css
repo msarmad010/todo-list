@@ -1,0 +1,1314 @@
+/* =====================================================
+   THEMES
+   Switch by setting <html data-theme="name">
+   Available: light (default), midnight, ocean, sunset, forest, rose, light
+===================================================== */
+
+[data-theme="midnight"] {
+    --bg: #0b1120;
+    --surface: #111827;
+    --surface-2: #1e293b;
+    --row-hover: #172033;
+    --input-bg: #0f172a;
+    --border: #1f2937;
+    --border-strong: #334155;
+
+    --text: #e2e8f0;
+    --text-strong: #ffffff;
+    --text-soft: #cbd5e1;
+    --text-muted: #94a3b8;
+    --text-dim: #64748b;
+
+    --accent: #6366f1;
+    --accent-2: #8b5cf6;
+    --accent-text: #a5b4fc;
+    --accent-icon: #818cf8;
+    --accent-soft: #1e1b4b;
+    --accent-soft-border: #312e81;
+
+    --danger: #e11d48;
+    --danger-text: #fb7185;
+
+    --glow-1: rgba(99, 102, 241, 0.18);
+    --glow-2: rgba(139, 92, 246, 0.12);
+    --shadow: rgba(0, 0, 0, 0.3);
+    --navbar-bg: rgba(17, 24, 39, 0.8);
+    --on-accent: #ffffff;
+}
+
+[data-theme="ocean"] {
+    --bg: #04121c;
+    --surface: #0a1f2e;
+    --surface-2: #10314a;
+    --row-hover: #0d2739;
+    --input-bg: #071827;
+    --border: #12324a;
+    --border-strong: #1d4a6b;
+
+    --text: #dbeafe;
+    --text-strong: #ffffff;
+    --text-soft: #bfdbfe;
+    --text-muted: #7fa8c9;
+    --text-dim: #4f7a9b;
+
+    --accent: #0ea5e9;
+    --accent-2: #14b8a6;
+    --accent-text: #7dd3fc;
+    --accent-icon: #38bdf8;
+    --accent-soft: #082f49;
+    --accent-soft-border: #0c4a6e;
+
+    --danger: #f43f5e;
+    --danger-text: #fb7185;
+
+    --glow-1: rgba(14, 165, 233, 0.2);
+    --glow-2: rgba(20, 184, 166, 0.14);
+    --shadow: rgba(0, 0, 0, 0.4);
+    --navbar-bg: rgba(10, 31, 46, 0.8);
+    --on-accent: #ffffff;
+}
+
+[data-theme="sunset"] {
+    --bg: #1a0f14;
+    --surface: #26161c;
+    --surface-2: #3a2029;
+    --row-hover: #2e1b22;
+    --input-bg: #1f1217;
+    --border: #3d2530;
+    --border-strong: #5a3543;
+
+    --text: #fde8e0;
+    --text-strong: #ffffff;
+    --text-soft: #f9d5c7;
+    --text-muted: #c99a8a;
+    --text-dim: #9a6f62;
+
+    --accent: #f97316;
+    --accent-2: #ec4899;
+    --accent-text: #fdba74;
+    --accent-icon: #fb923c;
+    --accent-soft: #431407;
+    --accent-soft-border: #7c2d12;
+
+    --danger: #e11d48;
+    --danger-text: #fda4af;
+
+    --glow-1: rgba(249, 115, 22, 0.2);
+    --glow-2: rgba(236, 72, 153, 0.14);
+    --shadow: rgba(0, 0, 0, 0.4);
+    --navbar-bg: rgba(38, 22, 28, 0.8);
+    --on-accent: #ffffff;
+}
+
+[data-theme="forest"] {
+    --bg: #07130d;
+    --surface: #0d1f15;
+    --surface-2: #163325;
+    --row-hover: #112a1c;
+    --input-bg: #09180f;
+    --border: #183524;
+    --border-strong: #26543a;
+
+    --text: #dcfce7;
+    --text-strong: #ffffff;
+    --text-soft: #bbf7d0;
+    --text-muted: #86b89a;
+    --text-dim: #588a6d;
+
+    --accent: #22c55e;
+    --accent-2: #84cc16;
+    --accent-text: #86efac;
+    --accent-icon: #4ade80;
+    --accent-soft: #052e16;
+    --accent-soft-border: #14532d;
+
+    --danger: #e11d48;
+    --danger-text: #fb7185;
+
+    --glow-1: rgba(34, 197, 94, 0.18);
+    --glow-2: rgba(132, 204, 22, 0.12);
+    --shadow: rgba(0, 0, 0, 0.4);
+    --navbar-bg: rgba(13, 31, 21, 0.8);
+    --on-accent: #052e16;
+}
+
+[data-theme="rose"] {
+    --bg: #150a14;
+    --surface: #211020;
+    --surface-2: #341a33;
+    --row-hover: #2a1529;
+    --input-bg: #1a0d19;
+    --border: #3a1d39;
+    --border-strong: #58305a;
+
+    --text: #fce7f3;
+    --text-strong: #ffffff;
+    --text-soft: #fbcfe8;
+    --text-muted: #c48fb5;
+    --text-dim: #93688a;
+
+    --accent: #ec4899;
+    --accent-2: #a855f7;
+    --accent-text: #f9a8d4;
+    --accent-icon: #f472b6;
+    --accent-soft: #500724;
+    --accent-soft-border: #831843;
+
+    --danger: #ef4444;
+    --danger-text: #fca5a5;
+
+    --glow-1: rgba(236, 72, 153, 0.2);
+    --glow-2: rgba(168, 85, 247, 0.14);
+    --shadow: rgba(0, 0, 0, 0.4);
+    --navbar-bg: rgba(33, 16, 32, 0.8);
+    --on-accent: #ffffff;
+}
+
+/* Light is the default when no theme is chosen */
+:root:not([data-theme]),
+[data-theme="light"] {
+    --bg: #f5f7fc;
+    --surface: #ffffff;
+    --surface-2: #eef2fa;
+    --row-hover: #f8fafc;
+    --input-bg: #ffffff;
+    --border: #e2e8f0;
+    --border-strong: #cbd5e1;
+
+    --text: #334155;
+    --text-strong: #0f172a;
+    --text-soft: #475569;
+    --text-muted: #64748b;
+    --text-dim: #94a3b8;
+
+    --accent: #4f46e5;
+    --accent-2: #7c3aed;
+    --accent-text: #4338ca;
+    --accent-icon: #6366f1;
+    --accent-soft: #eef2ff;
+    --accent-soft-border: #c7d2fe;
+
+    --danger: #e11d48;
+    --danger-text: #be123c;
+
+    --glow-1: rgba(99, 102, 241, 0.16);
+    --glow-2: rgba(236, 72, 153, 0.10);
+    --shadow: rgba(79, 70, 229, 0.10);
+    --navbar-bg: rgba(255, 255, 255, 0.85);
+    --on-accent: #ffffff;
+}
+
+
+/* =========================
+   BASE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    position: relative;
+    transition: background 0.35s ease, color 0.35s ease;
+}
+
+/* Ambient glow that follows the theme accent */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background:
+        radial-gradient(600px 400px at 12% -5%, var(--glow-1), transparent 70%),
+        radial-gradient(500px 380px at 95% 8%, var(--glow-2), transparent 70%);
+}
+
+.text-muted,
+.text-secondary {
+    color: var(--text-muted) !important;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--on-accent);
+}
+
+/* Smooth colour change when switching themes */
+.navbar,
+.todo-form-card,
+.update-card,
+.todo-table-card,
+.empty-state,
+.form-control,
+.search-box,
+.input-group-text,
+.todo-table,
+.todo-table td,
+.todo-table th,
+.nav-link,
+.theme-switcher {
+    transition:
+        background-color 0.35s ease,
+        border-color 0.35s ease,
+        color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+:focus-visible {
+    outline: 2px solid var(--accent-icon);
+    outline-offset: 2px;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    width: 100%;
+    min-height: 70px;
+    padding: 0 !important;
+
+    background: var(--navbar-bg) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar > .container {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+
+    color: var(--text-strong) !important;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+
+    text-decoration: none;
+}
+
+.navbar-brand i {
+    color: var(--accent-icon);
+    font-size: 25px;
+    margin-right: 8px;
+    filter: drop-shadow(0 0 8px var(--glow-1));
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-muted) !important;
+    padding: 8px 12px !important;
+    border-radius: 8px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--text-strong) !important;
+    background: var(--surface-2);
+}
+
+
+/* =========================
+   THEME SWITCHER
+   Round colour dots in the navbar
+========================= */
+
+.theme-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin: 0 14px;
+    padding: 6px 10px;
+
+    background: var(--surface-2);
+    border: 1px solid var(--border-strong);
+    border-radius: 30px;
+}
+
+.theme-dot {
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    padding: 0;
+
+    border: 2px solid transparent;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-dot:hover {
+    transform: scale(1.2);
+}
+
+.theme-dot.active {
+    border-color: var(--text-strong);
+    box-shadow: 0 0 0 3px var(--glow-1);
+}
+
+.theme-dot[data-theme="midnight"] { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+.theme-dot[data-theme="ocean"]    { background: linear-gradient(135deg, #0ea5e9, #14b8a6); }
+.theme-dot[data-theme="sunset"]   { background: linear-gradient(135deg, #f97316, #ec4899); }
+.theme-dot[data-theme="forest"]   { background: linear-gradient(135deg, #22c55e, #84cc16); }
+.theme-dot[data-theme="rose"]     { background: linear-gradient(135deg, #ec4899, #a855f7); }
+.theme-dot[data-theme="light"]    { background: linear-gradient(135deg, #ffffff, #cbd5e1); }
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.search-box {
+    width: 220px;
+    min-width: 0;
+    height: 42px;
+
+    background: var(--input-bg) !important;
+    color: var(--text-strong) !important;
+
+    border: 1px solid var(--border-strong) !important;
+    border-radius: 9px !important;
+
+    padding: 8px 13px;
+}
+
+.search-box::placeholder {
+    color: var(--text-dim);
+}
+
+.search-box:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px var(--glow-1) !important;
+}
+
+.search-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    flex-shrink: 0;
+    white-space: nowrap;
+
+    height: 42px;
+    padding: 0 18px;
+
+    background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+    color: var(--on-accent) !important;
+
+    border: none !important;
+    border-radius: 9px !important;
+
+    font-weight: 600;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.search-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px var(--glow-1);
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.main-container {
+    width: 100%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    padding: 45px 20px 70px;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.todo-form-card,
+.update-card {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    padding: 38px;
+
+    box-shadow: 0 20px 50px var(--shadow);
+}
+
+/* Accent line across the top of the card */
+.todo-form-card::before,
+.update-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+.todo-icon,
+.update-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+
+    border-radius: 16px;
+
+    color: var(--on-accent);
+    font-size: 25px;
+
+    box-shadow: 0 10px 30px var(--glow-1);
+}
+
+.todo-form-card h2,
+.update-card h2 {
+    margin-top: 16px;
+
+    color: var(--text-strong);
+
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+
+    text-align: center;
+}
+
+.todo-form-card > p,
+.update-card > p {
+    color: var(--text-muted);
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text-soft);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+
+    min-height: 46px;
+
+    background: var(--input-bg) !important;
+    color: var(--text-strong) !important;
+
+    border: 1px solid var(--border-strong) !important;
+    border-radius: 10px !important;
+
+    padding: 10px 13px;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-control::placeholder {
+    color: var(--text-dim);
+}
+
+.form-control:focus {
+    background: var(--input-bg) !important;
+    color: var(--text-strong) !important;
+
+    border-color: var(--accent) !important;
+
+    box-shadow: 0 0 0 3px var(--glow-1) !important;
+}
+
+.input-group {
+    width: 100%;
+}
+
+.input-group-text {
+    min-width: 46px;
+
+    display: flex;
+    justify-content: center;
+
+    background: var(--surface-2) !important;
+    color: var(--accent-icon) !important;
+
+    border: 1px solid var(--border-strong) !important;
+    border-radius: 10px 0 0 10px !important;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+.add-btn,
+.update-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    position: relative;
+    overflow: hidden;
+
+    min-height: 47px;
+
+    border: none !important;
+    border-radius: 10px !important;
+
+    background: linear-gradient(135deg, var(--accent), var(--accent-2)) !important;
+
+    color: var(--on-accent) !important;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-btn {
+    width: 100%;
+}
+
+.update-btn {
+    flex: 1;
+}
+
+/* Light sweep on hover */
+.add-btn::after,
+.update-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 60%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.28),
+        transparent
+    );
+
+    transition: left 0.6s ease;
+}
+
+.add-btn:hover,
+.update-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px var(--glow-1);
+}
+
+.add-btn:hover::after,
+.update-btn:hover::after {
+    left: 140%;
+}
+
+.add-btn:active,
+.update-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   TODO SECTION
+========================= */
+
+.todo-list-section {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.todo-list-section > .d-flex {
+    width: 100%;
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-heading {
+    margin: 0 0 5px;
+
+    color: var(--text-strong);
+
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+}
+
+.todo-heading i {
+    color: var(--accent-icon);
+    margin-right: 5px;
+}
+
+.todo-list-section > div > p {
+    margin: 0;
+    color: var(--text-dim);
+}
+
+.todo-count {
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 34px;
+
+    background: var(--accent-soft);
+    color: var(--accent-text);
+
+    border: 1px solid var(--accent-soft-border);
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.todo-table-card {
+    width: 100%;
+
+    margin-top: 20px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px var(--shadow);
+}
+
+.todo-table {
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    color: var(--text-soft);
+    background: transparent !important;
+}
+
+.todo-table thead {
+    background: var(--surface-2);
+}
+
+.todo-table th {
+    padding: 16px 18px !important;
+
+    background: transparent !important;
+    color: var(--text-muted);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    border: none !important;
+
+    white-space: nowrap;
+}
+
+.todo-table td {
+    padding: 17px 18px !important;
+
+    background: transparent !important;
+    color: var(--text-soft);
+
+    border-color: var(--border) !important;
+
+    vertical-align: middle !important;
+}
+
+.todo-table tbody tr {
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Accent bar slides in on the left of the hovered row */
+.todo-table tbody tr:hover {
+    background: var(--row-hover);
+    box-shadow: inset 3px 0 0 var(--accent);
+}
+
+.todo-table tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+
+/* =========================
+   NUMBER
+========================= */
+
+.todo-number {
+    width: 34px;
+    height: 34px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--accent-soft);
+    color: var(--accent-text);
+
+    border: 1px solid var(--accent-soft-border);
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.todo-table strong {
+    color: var(--text-strong);
+    font-weight: 600;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description-cell {
+    max-width: 330px;
+
+    color: var(--text-muted) !important;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.date-text {
+    display: inline-flex;
+    align-items: center;
+
+    color: var(--text-muted);
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+.date-text i {
+    margin-right: 6px;
+    color: var(--accent-icon);
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.action-btn {
+    display: inline-flex !important;
+
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    min-height: 34px;
+
+    border-radius: 8px !important;
+
+    margin: 2px !important;
+
+    font-size: 13px;
+
+    transition: transform 0.15s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.action-btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-outline-primary {
+    color: var(--accent-text) !important;
+    border-color: var(--accent) !important;
+}
+
+.btn-outline-primary:hover {
+    color: var(--on-accent) !important;
+    background: var(--accent) !important;
+}
+
+.btn-outline-danger {
+    color: var(--danger-text) !important;
+    border-color: var(--danger) !important;
+}
+
+.btn-outline-danger:hover {
+    color: #ffffff !important;
+    background: var(--danger) !important;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-state {
+    width: 100%;
+
+    background: var(--surface);
+
+    border: 1px dashed var(--border-strong);
+    border-radius: 18px;
+
+    padding: 65px 20px;
+
+    text-align: center;
+}
+
+.empty-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--surface-2);
+
+    color: var(--accent-icon);
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    box-shadow: 0 0 0 8px var(--glow-1);
+}
+
+.empty-state h4 {
+    margin-bottom: 8px;
+
+    color: var(--text-strong);
+    font-weight: 700;
+}
+
+.empty-state p {
+    color: var(--text-dim);
+}
+
+
+/* =========================
+   UPDATE PAGE
+========================= */
+
+.cancel-btn {
+    gap: 8px;
+
+    min-height: 50px;
+
+    font-weight: 600;
+    white-space: nowrap;
+
+    padding: 0 25px !important;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--surface-2) !important;
+
+    color: var(--text-soft) !important;
+
+    border: 1px solid var(--border-strong) !important;
+
+    border-radius: 10px !important;
+
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.cancel-btn:hover {
+    background: var(--border-strong) !important;
+    color: var(--text-strong) !important;
+}
+
+
+/* =========================
+   ADD / UPDATE CARD (refined style)
+========================= */
+
+.todo-form-card,
+.update-card {
+    padding: 44px 40px 40px;
+
+    background:
+        radial-gradient(420px 220px at 50% -70px, var(--glow-1), transparent 72%),
+        var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: 24px;
+}
+
+/* remove the top line, the glow does the job now */
+.todo-form-card::before,
+.update-card::before {
+    display: none;
+}
+
+.todo-icon,
+.update-icon {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 20px;
+
+    transform: rotate(-6deg);
+
+    box-shadow:
+        0 0 0 8px var(--glow-1),
+        0 12px 28px var(--glow-1);
+}
+
+.todo-form-card h2,
+.update-card h2 {
+    margin-top: 22px;
+    margin-bottom: 6px;
+
+    font-size: 28px;
+}
+
+.todo-form-card > p,
+.update-card > p {
+    margin-bottom: 30px;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+.todo-form-card .form-label,
+.update-card .form-label {
+    margin-bottom: 7px;
+
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+/* filled fields instead of outlined boxes */
+.todo-form-card .form-control,
+.update-card .form-control {
+    min-height: 50px;
+
+    background: var(--surface-2) !important;
+
+    border: 1.5px solid transparent !important;
+    border-radius: 12px !important;
+
+    padding: 12px 15px;
+}
+
+.todo-form-card textarea.form-control,
+.update-card textarea.form-control {
+    min-height: 130px;
+}
+
+.todo-form-card .form-control:focus,
+.update-card .form-control:focus {
+    background: var(--surface) !important;
+
+    border-color: var(--accent) !important;
+
+    box-shadow: 0 0 0 4px var(--glow-1) !important;
+}
+
+/* icon + input joined as one field */
+.todo-form-card .input-group,
+.update-card .input-group {
+    flex-wrap: nowrap;
+    border-radius: 12px;
+    transition: box-shadow 0.2s ease;
+}
+
+.todo-form-card .input-group-text,
+.update-card .input-group-text {
+    min-width: 50px;
+
+    background: var(--surface-2) !important;
+    color: var(--accent-icon) !important;
+
+    border: 1.5px solid transparent !important;
+    border-right: none !important;
+    border-radius: 12px 0 0 12px !important;
+}
+
+.todo-form-card .input-group .form-control,
+.update-card .input-group .form-control {
+    border-left: none !important;
+    border-radius: 0 12px 12px 0 !important;
+    padding-left: 4px;
+}
+
+.todo-form-card .input-group:focus-within,
+.update-card .input-group:focus-within {
+    box-shadow: 0 0 0 4px var(--glow-1);
+}
+
+.todo-form-card .input-group:focus-within .form-control,
+.todo-form-card .input-group:focus-within .input-group-text,
+.update-card .input-group:focus-within .form-control,
+.update-card .input-group:focus-within .input-group-text {
+    background: var(--surface) !important;
+    border-color: var(--accent) !important;
+    box-shadow: none !important;
+}
+
+.add-btn,
+.update-btn {
+    min-height: 52px;
+
+    margin-top: 6px;
+
+    border-radius: 12px !important;
+
+    box-shadow: 0 10px 24px var(--glow-1);
+}
+
+
+/* =========================
+   CARD LOGO (built-in, no icon font needed)
+========================= */
+
+.todo-icon > i,
+.update-icon > i {
+    display: none;
+}
+
+.todo-icon::after,
+.update-icon::after {
+    content: "";
+
+    width: 32px;
+    height: 32px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.todo-icon::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2'/%3E%3Crect x='9' y='3' width='6' height='4' rx='1'/%3E%3Cpath d='M9 14l2 2 4-4'/%3E%3C/svg%3E");
+}
+
+.update-icon::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 20h9'/%3E%3Cpath d='M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z'/%3E%3C/svg%3E");
+}
+
+
+/* =========================
+   ENTRANCE (one moment on page load)
+========================= */
+
+@keyframes rise-in {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.todo-form-card,
+.update-card {
+    animation: rise-in 0.55s ease both;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 991px) {
+
+    .navbar > .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .search-form {
+        margin-top: 15px;
+        padding-bottom: 10px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .theme-switcher {
+        margin: 12px 0 0;
+        align-self: flex-start;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .main-container {
+        padding: 30px 15px 50px;
+    }
+
+    .todo-form-card,
+    .update-card {
+        padding: 28px 20px;
+    }
+
+    .todo-list-section {
+        margin-top: 35px;
+    }
+
+    .todo-list-section > .d-flex {
+        align-items: flex-start;
+    }
+
+    .todo-heading {
+        font-size: 21px;
+    }
+
+    .todo-count {
+        font-size: 11px;
+    }
+
+    .action-btn {
+        width: 100%;
+        margin: 3px 0 !important;
+    }
+
+    .description-cell {
+        min-width: 220px;
+    }
+
+    .update-card .d-flex {
+        flex-direction: column;
+    }
+
+    .update-btn,
+    .cancel-btn {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .main-container {
+        padding-top: 25px;
+    }
+
+    .todo-form-card,
+    .update-card {
+        border-radius: 16px;
+        padding: 25px 18px;
+    }
+
+    .todo-form-card h2,
+    .update-card h2 {
+        font-size: 23px;
+    }
+
+    .todo-table-card {
+        border-radius: 14px;
+    }
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
